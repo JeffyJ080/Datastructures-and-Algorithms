@@ -9,7 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Examples and Practice\" />
     <Folder Include="Mini Projects\" />
   </ItemGroup>
 
