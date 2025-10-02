@@ -52,9 +52,9 @@ namespace LinkedListAlphabet
     }
 
     // Step 3: Test the Linked List
-    class Program
+    class AlphabetList
     {
-        static void Main(string[] args)
+        static void Test(string[] args)
         {
             LinkedList alphabetList = new LinkedList();
 
