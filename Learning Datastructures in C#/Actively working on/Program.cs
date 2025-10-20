@@ -9,6 +9,33 @@ class Program
 
     }
 
+    static void OppBubbleSort()
+    {
+        // Bubble sort
+        int[] arr = { 42, 12, 90, 77, 5, 63, 21, 55, 38, 8, 99, 2 };
+        bool Swapped;
+
+        for (int i = 0; i < arr.Length - 1; i++) {
+            Swapped = false;
+
+            for (int j = 0; j < arr.Length - 1 - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    // Swap elements
+                    int Temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = Temp;
+                    Swapped = true;
+                }
+            }
+
+            if (!Swapped) { break; }
+        }
+
+        foreach (var item in arr) {
+            Console.WriteLine(item);
+        }
+    }
+
     static void InsertSort()
     {
         //Insertion Sort
