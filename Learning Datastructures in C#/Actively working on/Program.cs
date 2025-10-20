@@ -9,6 +9,24 @@ class Program
 
     }
 
+    static void InsertSort()
+    {
+        //Insertion Sort
+        int[] ints = { 42, 12, 90, 77, 5, 63, 21, 55, 38, 8, 99, 2 };
+
+        for (int i = 1; i < ints.Length; i++) {
+            int j = i - 1;
+            int key = ints[i];
+
+            while (j >= 0 && ints[j] > key) {
+                ints[j + 1] = ints[j];
+                j--;
+            }
+
+            ints[j + 1] = key;
+        }
+    }
+
     // Q1
     static void ListsArrayLists()
     {
